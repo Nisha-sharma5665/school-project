@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .notice-container {
+  width: 100%;
+  overflow: hidden;
+  height: 240px;
+}
+
+.notice-line {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 5px;
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+         $(document).ready(function() {  //jquery
+      function animateP() {
+        var pWidth = $('#notice').width();
+        var containerWidth = $('body').width();
+        var animationDuration = 20000; // Adjust the animation duration as needed
+
+        $('#notice').css('left', -pWidth);
+        $('#notice').animate({left: containerWidth}, animationDuration, 'linear', animateP);
+      }
+
+      animateP();
+    });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+  // Get the container and line elements
+  var container = $('.notice-container');
+  var line = $('.notice-line');
+
+  // Calculate the total width of the line
+  var lineWidth = line.outerWidth();
+
+  // Animate the line
+  function animateLine() {
+    line.animate({ 'marginLeft': -lineWidth }, 20000, 'linear', function() {
+      // Reset the line position when it reaches the end
+      line.css('marginLeft', container.width());
+      animateLine();
+    });
+  }
+
+  // Start the animation
+  animateLine();
+});
+
+      </script>
+
+</head>
+<body>
+    <h1>
+        <img src="SchoolLog0.jpg"/>  <!---HTML-->
+        <img src="header-sxd-banner.jpg"/>
+        
+        
+    </h1>
+    
+    <nav class="navbar navbar-expand-sm bg-dark">
+    
+
+    <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item  border-right-10">
+              <a class="nav-link " href="https://stxaviersschool.com/">The school</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://stxaviersschool.com/">Academy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://stxaviersschool.com/">Admission</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://stxaviersschool.com/">Notice board</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://stxaviersschool.com/">Contact us</a>
+              </li>
+              
+          </ul>
+        </nav>
+          <div>
+            <div> <img src="student img.jpg"/></div>
+            
+            <div> <br>
+                <ul class="bg-info">
+                  <div class="notice-container">
+                    <div class="notice-line">Dear Candidates, The second list for candidates selected for admission to class 11 has been published on the school website. Selected candidates can come with the required documents and take admission on the specified dates.<br> Fr. Principal </div>
+                    <div class="notice-line">Dear Candidates, The second list for candidates selected for admission to class 11 has been published on the school website. Selected candidates can come with the required documents and take admission on the specified dates.<br> Fr. Principal </div>
+                    <div class="notice-line">Dear Candidates, The second list for candidates selected for admission to class 11 has been published on the school website. Selected candidates can come with the required documents and take admission on the specified dates.<br> Fr. Principal </div>
+                    <div class="notice-line">Dear Candidates, The second list for candidates selected for admission to class 11 has been published on the school website. Selected candidates can come with the required documents and take admission on the specified dates.<br> Fr. Principal </div>
+                  </div>
+                  </ul>
+                  <button onclick="alert('Hellow student');" class="btn btn-success"><!---javascript-->
+                    click me 
+                  </button>
+                  <div id="links" class="links" ></div> 
+                  <br>  
+       <button type="button" name="button" value="button" onclick="Processlink();">clickme</button><br>
+            </div>
+          </div>
+      
+        </div>
+        <br>
+        <div class="d-flex">
+         <div class="d-inline-block mr-3" ><img style=" width: 557px; " src="DSCN2207-768x1024.jpg"/></div> 
+         <div class ="d-inline-block  mr-3 p-5">  
+       
+         <video width="500"height="700"controls>
+        <source src="https://youtube/A4R8SjnoHA8"type="video/mp4">
+        
+
+         </video>
+        </div> 
+           </div><br>
+           
+           <div class="mt-5 pt-5 pb-5 footer bg-secondary">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-xs-12 location">
+                  <h4 class="mt-lg-0 mt-sm-4 link-dark">About us</h4>
+                  <p class="text-dark">St. Xavier’s School, Doranda, was started in response to a request from the professional community of Heavy Engineering Corporation, Hindustan Steel Ltd. and the National Coal Development Corporation, in 1960</p>
+                  <p class="mb-0 text-dark"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                  <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                  <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                    <ul class="m-0 p-0">
+                      <li>- <a class="link-dark" href="https://stxaviersschool.com">About us</a></li>
+                      <li>- <a class="link-dark" href="https://stxaviersschool.com">Contact</a></li>
+                      <li>- <a class="link-dark"href="https://stxaviersschool.com">terms and condition</a></li>
+                      <li>- <a class="link-dark"href="https://stxaviersschool.com">Privacy policy</a></li>
+                      <li>- <a class="link-dark" href="https://stxaviersschool.com">refund</a></li>
+                      <li>- <a class="link-dark" href="https://stxaviersschool.com">Fees details</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location"><!---bootstrap-->
+                  <h4 class="mt-lg-0 mt-sm-4 link-dark">Location</h4>
+                  <p class="text-dark">Ranchi jharkhand harmu</p>
+                  <p class="mb-0 text-dark"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                  <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col copyright">
+                  <p class=""><small class="text-dark-50">© 2023. All Rights Reserved.</small></p>
+                </div>
+              </div>
+            </div>
+            </div>
+           
+         
+
+        
+      
+     
+    
+</body>
+</html>
